@@ -237,6 +237,17 @@ $car-width: 350;
 	display: inline-block;
 	// margin: 200px;
 
+	&:hover .car__headlight::before,
+	&:hover .car__headlight::after {
+		background-color: #fff;
+		box-shadow: 0 0 40px 20px #fff;
+	}
+
+	&:hover .car__numb::before,
+	&:hover .car__numb::after {
+		box-shadow: 0 0 20px 5px #fff;
+	}
+
 	//---------- Крыша ----------
 	&__roof {
 		position: relative;
