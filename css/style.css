@@ -46,7 +46,7 @@ body {
 /* --------------- */
 .page {
   font-family: Oswald, sans-serif;
-  background: #fff url("../img/content/fon.png") 0 0 no-repeat;
+  background: #fff url("../../img/content/fon.png") 0 0 no-repeat;
 }
 
 .conteiner {
@@ -169,7 +169,7 @@ body {
   left: 0;
   width: 24px;
   height: 24px;
-  background: url("../img/icons/check.png") 0 0 no-repeat;
+  background: url("../../img/icons/check.png") 0 0 no-repeat;
 }
 
 .wrap {
@@ -448,8 +448,8 @@ body {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: #aaa;
-  box-shadow: inset 0 0 3px 0 black, 2px 0 2px 0 black;
+  background-color: #fff;
+  box-shadow: inset 0 0 4px 0 black, 2px 0 2px 0 black;
   border: 2px solid #aaa;
 }
 .car__grill-line-4::after {
@@ -460,8 +460,8 @@ body {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: #aaa;
-  box-shadow: inset 0 0 3px 0 black, -2px 0 2px 0 black;
+  background-color: #fff;
+  box-shadow: inset 0 0 4px 0 black, -2px 0 2px 0 black;
   border: 2px solid #aaa;
 }
 .car__bump {
@@ -484,11 +484,6 @@ body {
   background-color: #555;
   box-shadow: inset 0 -1px 5px 2px black;
   border-radius: 6px 0px 170px 170px/0px 0px 75px 75px;
-}
-.car__bump-grill {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 .car__numb {
   position: absolute;

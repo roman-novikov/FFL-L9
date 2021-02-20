@@ -248,7 +248,9 @@ $car-width: 350;
 		box-shadow: 0 0 20px 5px #fff;
 	}
 
-	//---------- Крыша ----------
+	//---------- Крыша + лобовое + стойки ----------
+
+	//лобовое стекло
 	&__roof {
 		position: relative;
 		top: 0;
@@ -260,6 +262,7 @@ $car-width: 350;
 		border-left: 30px solid transparent;
 		border-right: 30px solid transparent;
 
+		//крыша
 		&::before {
 			content: '';
 			position: absolute;
@@ -272,6 +275,7 @@ $car-width: 350;
 		}
 	}
 
+	//стойки
 	&__roof-left {
 		position: absolute;
 		top: 26px;
@@ -282,6 +286,7 @@ $car-width: 350;
 		transform: rotate(-63deg);
 	}
 
+	//стойки
 	&__roof-right {
 		position: absolute;
 		top: 26px;
@@ -295,6 +300,8 @@ $car-width: 350;
 	//--------------------
 
 	//---------- Корпус + белые линии + дворники + зеркала ----------
+
+	//корпус
 	&__body {
 		position: relative;
 		width: $car-width+px;
@@ -305,6 +312,7 @@ $car-width: 350;
 		box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5), 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 	}
 
+	//зеркала
 	&__mirror-left {
 		position: absolute;
 		top: 23%;
@@ -315,6 +323,7 @@ $car-width: 350;
 		background-color: #000;
 	}
 
+	//зеркала
 	&__mirror-right {
 		position: absolute;
 		top: 23%;
@@ -325,6 +334,7 @@ $car-width: 350;
 		background-color: #000;
 	}
 
+	//белая полоса на капоте
 	&__white-line-1 {
 		position: absolute;
 		top: 0;
@@ -339,6 +349,7 @@ $car-width: 350;
 		transform: skew(15deg);
 	}
 
+	//щетка лобового стекла
 	&__white-line-1::before {
 		content: '';
 		position: absolute;
@@ -351,6 +362,7 @@ $car-width: 350;
 		background-color: #000;
 	}
 
+	//белая полоса на капоте
 	&__white-line-2 {
 		position: absolute;
 		top: 0;
@@ -365,6 +377,7 @@ $car-width: 350;
 		transform: skew(-15deg);
 	}
 
+	//щетка лобового стекла
 	&__white-line-2::before {
 		content: '';
 		position: absolute;
@@ -475,6 +488,8 @@ $car-width: 350;
 	//--------------------
 
 	//---------- Решотка капота + бампер + номер + колеса ----------
+
+	//решотка капота
 	&__hood-grill-top {
 		position: absolute;
 		// display: inline-block;
@@ -489,6 +504,7 @@ $car-width: 350;
 		border-radius: 70px 70px 0px 0px / 75px 75px 0px 0px;
 	}
 
+	//решотка капота
 	&__grill-line-1 {
 		position: absolute;
 		top: 0;
@@ -500,6 +516,7 @@ $car-width: 350;
 		background-color: #ccc;
 	}
 
+	//решотка капота
 	&__grill-line-2 {
 		position: absolute;
 		top: 0;
@@ -511,6 +528,7 @@ $car-width: 350;
 		background-color: #ccc;
 	}
 
+	//решотка капота
 	&__grill-line-3 {
 		position: absolute;
 		top: 0;
@@ -522,6 +540,7 @@ $car-width: 350;
 		background-color: #ccc;
 	}
 
+	//решотка капота
 	&__hood-grill-bottom {
 		position: absolute;
 		top: 45%;
@@ -536,6 +555,7 @@ $car-width: 350;
 		transform: rotate(180deg);
 	}
 
+	//решотка капота
 	&__grill-line-4 {
 		position: absolute;
 		top: 0;
@@ -547,6 +567,7 @@ $car-width: 350;
 		background-color: #ccc;
 	}
 
+	//фары над решоткой
 	&__grill-line-4::before {
 		content: '';
 		position: absolute;
@@ -555,11 +576,12 @@ $car-width: 350;
 		width: 25px;
 		height: 25px;
 		border-radius: 50%;
-		background-color: #aaa;
-		box-shadow: inset 0 0 3px 0 black, 2px 0 2px 0 black;
+		background-color: #fff;
+		box-shadow: inset 0 0 4px 0 black, 2px 0 2px 0 black;
 		border: 2px solid #aaa;
 	}
 
+	//фары над решоткой
 	&__grill-line-4::after {
 		content: '';
 		position: absolute;
@@ -568,11 +590,12 @@ $car-width: 350;
 		width: 25px;
 		height: 25px;
 		border-radius: 50%;
-		background-color: #aaa;
-		box-shadow: inset 0 0 3px 0 black, -2px 0 2px 0 black;
+		background-color: #fff;
+		box-shadow: inset 0 0 4px 0 black, -2px 0 2px 0 black;
 		border: 2px solid #aaa;
 	}
 
+	//бампер
 	&__bump {
 		position: absolute;
 		top: 50%;
@@ -584,6 +607,7 @@ $car-width: 350;
 		border-radius: 25px 25px 240px 240px / 75px 75px 75px 75px;
 	}
 
+	//нижняя часть бампера (черная)
 	&__bump-bottom {
 		position: absolute;
 		bottom: 0;
@@ -596,13 +620,7 @@ $car-width: 350;
 		border-radius: 6px 0px 170px 170px / 0px 0px 75px 75px;
 	}
 
-	&__bump-grill {
-		position: absolute;
-		top: 0;
-		left: 0;
-
-	}
-
+	//номер
 	&__numb {
 		position: absolute;
 		top: 50%;
@@ -616,6 +634,7 @@ $car-width: 350;
 		box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5), 0 0px 5px 0 rgba(0, 0, 0, 0.5);
 	}
 
+	//противотуманки
 	&__numb::before {
 		content: '';
 		position: absolute;
@@ -630,6 +649,7 @@ $car-width: 350;
 		background-color: #fff;
 	}
 
+	//противотуманки
 	&__numb::after {
 		content: '';
 		position: absolute;
@@ -644,6 +664,7 @@ $car-width: 350;
 		background-color: #fff;
 	}
 
+	//решотка бампера
 	&__bump-grill {
 		position: absolute;
 		top: 50%;
@@ -657,6 +678,7 @@ $car-width: 350;
 		border-radius: 100px 100px 200px 200px / 50px 50px 75px 75px;
 	}
 
+	//решотка бампера
 	&__bump-line-1 {
 		position: absolute;
 		top: 0;
@@ -668,6 +690,7 @@ $car-width: 350;
 		background-color: #ccc;
 	}
 
+	//решотка бампера
 	&__bump-line-2 {
 		position: absolute;
 		top: 0;
@@ -679,6 +702,7 @@ $car-width: 350;
 		background-color: #ccc;
 	}
 
+	//решотка бампера
 	&__bump-line-3 {
 		position: absolute;
 		top: 0;
@@ -690,6 +714,7 @@ $car-width: 350;
 		background-color: #ccc;
 	}
 
+	//решотка бампера
 	&__bump-line-4 {
 		position: absolute;
 		top: 0;
@@ -701,6 +726,7 @@ $car-width: 350;
 		background-color: #ccc;
 	}
 
+	//колеса
 	&__wheel-left {
 		position: absolute;
 		bottom: 0;
@@ -713,6 +739,7 @@ $car-width: 350;
 		transform: rotate(90deg);
 	}
 
+	//колеса
 	&__wheel-right {
 		position: absolute;
 		bottom: 0;
