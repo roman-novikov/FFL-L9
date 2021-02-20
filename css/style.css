@@ -46,7 +46,7 @@ body {
 /* --------------- */
 .page {
   font-family: Oswald, sans-serif;
-  background: #fff url("../img/content/fon.png") 0 0 no-repeat;
+  background: #fff url("../../img/content/fon.png") 0 0 no-repeat;
 }
 
 .conteiner {
@@ -169,7 +169,7 @@ body {
   left: 0;
   width: 24px;
   height: 24px;
-  background: url("../img/icons/check.png") 0 0 no-repeat;
+  background: url("../../img/icons/check.png") 0 0 no-repeat;
 }
 
 .wrap {
@@ -229,7 +229,7 @@ body {
   transform: rotate(63deg);
 }
 .car__armchair-left {
-  background: url(../img/content/armchair.png) 0 0/cover no-repeat;
+  background: url(../../img/content/armchair.png) 0 0/cover no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -238,7 +238,7 @@ body {
   height: 70px;
 }
 .car__armchair-right {
-  background: url(../img/content/armchair.png) 0 0/cover no-repeat;
+  background: url(../../img/content/armchair.png) 0 0/cover no-repeat;
   position: absolute;
   top: 0;
   right: 0;
@@ -249,7 +249,7 @@ body {
 .car__armchair-right::before {
   content: "";
   position: absolute;
-  top: 40%;
+  top: 47%;
   left: 50%;
   margin: 0 0 0 -25px;
   width: 50px;
