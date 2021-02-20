@@ -248,8 +248,7 @@ $car-width: 350;
 		box-shadow: 0 0 20px 5px #fff;
 	}
 
-	//---------- Крыша + лобовое + стойки ----------
-
+	//---------- Крыша + лобовое + стойки + салон машины ----------
 	//лобовое стекло
 	&__roof {
 		position: relative;
@@ -258,7 +257,7 @@ $car-width: 350;
 		width: 250px;
 		height: 0;
 		margin: 0 0 0 -125px;
-		border-bottom: 55px solid rgba(115, 220, 255, 0.5);
+		border-bottom: 55px solid rgba(115, 220, 255, 0.6);
 		border-left: 30px solid transparent;
 		border-right: 30px solid transparent;
 
@@ -295,6 +294,52 @@ $car-width: 350;
 		height: 4px;
 		background-color: black;
 		transform: rotate(63deg);
+	}
+
+	//кресло
+	&__armchair-left {
+		background: url(../../img/content/armchair.png) 0 0 / cover no-repeat;
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 5px 0 0 80px;
+		width: 70px;
+		height: 70px;
+	}
+
+	//кресло
+	&__armchair-right {
+		background: url(../../img/content/armchair.png) 0 0 / cover no-repeat;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 5px 80px 0 0;
+		width: 70px;
+		height: 70px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			margin: 0 0 0 -25px;
+			width: 50px;
+			height: 50px;
+			border: 7px solid red;
+			border-radius: 50%;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: -7%;
+			left: -60%;
+			margin: 0 0 0 0px;
+			width: 40px;
+			height: 10px;
+			background-color: #000;
+			border-radius: 50%;
+		}
 	}
 
 	//--------------------
